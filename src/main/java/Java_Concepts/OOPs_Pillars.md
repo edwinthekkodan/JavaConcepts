@@ -23,7 +23,6 @@ Inheritance allows a class to inherit properties and methods from another class.
 Polymorphism lets you use one interface or method in different ways.
 ![img_3.png](img_3.png)
 
-✅ Usage:
 
 ![img_4.png](img_4.png)
 
