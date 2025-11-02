@@ -1,0 +1,39 @@
+🧱 Abstract Classes
+📌 What is it?
+An abstract class is a blueprint for other classes. It can have:
+- Abstract methods (no body — must be implemented by child classes)
+- Concrete methods (with body — shared logic)
+- Variables (both static and instance)
+🧪 Example:
+abstract class Employee {
+    String name;
+    abstract void work(); // abstract method
+
+    void attendMeeting() {
+        System.out.println(name + " is attending a meeting.");
+    }
+}
+
+
+✅ Use Case:
+When you want to define a base class with partial implementation — like a generic Employee class that different roles (Manager, Developer) can extend.
+
+---------------------------------------------------------------
+🔌 Interfaces
+📌 What is it?
+An interface is a contract — it defines what a class must do, but not how. It only contains:
+- Abstract methods (implicitly public and abstract)
+- Constants (implicitly public, static, final)
+- From Java 8+, it can also have default and static methods
+🧪 Example:
+interface Workable {
+    void work(); // abstract method
+}
+
+
+✅ Use Case:
+When you want to define capabilities that can be shared across unrelated classes — like Workable, Printable, Clickable.
+
+💼 Real-World Analogy
+- Abstract Class: Like a company policy document — it gives structure and some rules, but leaves room for department-specific details.
+- Interface: Like a job description — it tells you what tasks must be done, but not how to do them.
