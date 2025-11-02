@@ -1,0 +1,47 @@
+🧠 What Does "Static" Mean in Java?
+In Java, static means shared — like a common resource that belongs to the class itself, not to individual objects.
+
+🔧 Static Variables (aka Class Variables)
+📌 Definition:
+A static variable is a single copy of a variable that is shared by all objects of a class.
+✅ Use Case:
+When you want to store data that’s common to all objects, like a counter or a company name.
+🧪 Example:
+class Employee {
+    static String companyName = "TechCorp"; // shared by all employees
+    String name;
+
+    Employee(String name) {
+        this.name = name;
+    }
+}
+
+
+🎯 Key Points:
+- Only one copy exists, no matter how many objects you create.
+- You can access it using the class name: Employee.companyName.
+
+⚙️ Static Methods
+📌 Definition:
+A static method belongs to the class, not to any object. You can call it without creating an object.
+✅ Use Case:
+When the method doesn’t need to use any instance variables (i.e., it works independently of object state).
+🧪 Example:
+class MathUtils {
+    static int add(int a, int b) {
+        return a + b;
+    }
+}
+
+
+You can call it like this:
+int result = MathUtils.add(5, 3);
+
+
+🎯 Key Points:
+- Can only access static variables and other static methods directly.
+- Useful for utility functions (like Math.pow() or Integer.parseInt()).
+
+🧩 Real-World Analogy
+Think of a static variable like a shared whiteboard in a classroom — everyone can see and update it.
+A static method is like a public announcement — it doesn’t depend on who’s listening, it just delivers info.
