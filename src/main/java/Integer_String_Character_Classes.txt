@@ -1,0 +1,51 @@
+🔢 1. Integer Class
+The Integer class wraps a primitive int value into an object. It’s part of Java’s wrapper classes.
+✅ Common Uses:
+- Converting between int and String
+- Parsing numbers from text
+- Using integers in collections like ArrayList
+🧪 Useful Methods:
+| parseInt(String s) |  | Integer.parseInt("123") → 123 |
+| valueOf(String s) |  | Integer.valueOf("123") → Integer |
+| toString(int i) |  | Integer.toString(123) → "123" |
+| compare(int x, int y) |  | Integer.compare(5, 3) → 1 |
+| intValue() |  | new Integer(10).intValue() |
+
+
+
+🧵 2. String Class
+The String class represents a sequence of characters. It’s immutable, meaning once created, it can’t be changed.
+✅ Common Uses:
+- Storing and manipulating text
+- Parsing input/output
+- Comparing or formatting data
+🧪 Useful Methods:
+| length() |  | "hello".length() → 5 |
+| charAt(int index) |  | "hello".charAt(1) → 'e' |
+| substring(int start, int end) |  | "hello".substring(1, 4) → "ell" |
+| equals(String s) |  | "abc".equals("abc") → true |
+| toLowerCase()toUpperCase() |  | "Hi".toLowerCase() → "hi" |
+| contains(String s) |  | "hello".contains("ll") → true |
+| split(String regex) |  | "a,b,c".split(",") → ["a", "b", "c"] |
+
+
+
+🔤 3. Character Class
+The Character class wraps a char primitive and provides utility methods for character operations.
+✅ Common Uses:
+- Checking character types (digit, letter, etc.)
+- Converting case
+- Validating input
+🧪 Useful Methods:
+| isDigit(char ch) |  | Character.isDigit('5') → true |
+| isLetter(char ch) |  | Character.isLetter('A') → true |
+| isWhitespace(char ch) |  | Character.isWhitespace(' ') → true |
+| toUpperCase(char ch) |  | Character.toUpperCase('a') → 'A' |
+| toLowerCase(char ch) |  | Character.toLowerCase('Z') → 'z' |
+
+
+
+💼 Real-World Analogy
+- Integer is like a calculator — it helps you do math and conversions.
+- String is like a document — you read, write, and format text.
+- Character is like a proofreader — it checks each letter for type, case, or spacing.
