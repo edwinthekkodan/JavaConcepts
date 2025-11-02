@@ -1,6 +1,6 @@
 package OOPs;
 
-class Manager extends Employee {
+class Manager extends Abstraction_Employee {
     public Manager(String name, int id) {
         super(name, id);
     }
@@ -11,7 +11,7 @@ class Manager extends Employee {
     }
 }
 
-class Developer extends Employee {
+class Developer extends Abstraction_Employee {
     public Developer(String name, int id) {
         super(name, id);
     }

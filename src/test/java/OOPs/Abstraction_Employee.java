@@ -1,10 +1,10 @@
 package OOPs;
 
-abstract class Employee {
-    private String name;
-    private int id;
+abstract class Abstraction_Employee {
+    private String name; //encapsulation - accessed via getName()
+    private int id; //encapsulation - accessed via getId()
 
-    public Employee(String name, int id) {
+    public Abstraction_Employee(String name, int id) {
         this.name = name;
         this.id = id;
     }

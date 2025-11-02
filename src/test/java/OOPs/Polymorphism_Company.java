@@ -1,9 +1,9 @@
 package OOPs;
 
-public class Company {
+public class Polymorphism_Company {
     public static void main(String[] args) {
-        Employee emp1 = new Manager("Alice", 101);
-        Employee emp2 = new Developer("Bob", 102);
+        Abstraction_Employee emp1 = new Manager("Alice", 101);
+        Abstraction_Employee emp2 = new Developer("Bob", 102);
 
         emp1.showDetails();
         emp1.work(); // Polymorphic call
